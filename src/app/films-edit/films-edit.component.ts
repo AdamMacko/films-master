@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
-
-// Angular Material moduly
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -30,6 +28,7 @@ import { Film } from '../../entities/film';
   templateUrl: './films-edit.component.html',
   styleUrls: ['./films-edit.component.css']
 })
+  
 export class FilmsEditComponent implements OnInit {
   filmModel!: FormGroup;
   filmId: number | null = null;
@@ -51,7 +50,6 @@ export class FilmsEditComponent implements OnInit {
       afi2007: [null]
     });
     
-
     const idParam = this.route.snapshot.paramMap.get('id');
     if (idParam) {
       this.filmId = +idParam;
