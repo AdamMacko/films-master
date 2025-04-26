@@ -32,6 +32,7 @@ import { MatSelectModule } from '@angular/material/select';
   templateUrl: './films-edit.component.html',
   styleUrls: ['./films-edit.component.css']
 })
+  
 export class FilmsEditComponent implements OnInit {
   filmModel!: FormGroup;
   filmId: number | null = null;
