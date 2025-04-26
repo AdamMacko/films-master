@@ -1,20 +1,30 @@
 [ {
+  "id" : 27,
+  "nazov" : "Do the Right Thing",
+  "slovenskyNazov" : "Konaj správne",
+  "rok" : 1996,
+  "imdbID" : "tt0097216",
+  "postava" : [ ],
+  "poradieVRebricku" : {
+    "AFI 2007" : 96
+  }
+}, {
   "id" : 28,
   "nazov" : "Doctor Zhivago",
   "slovenskyNazov" : "Doktor Živago",
-  "rok" : 1966,
+  "rok" : 1965,
   "imdbID" : "tt0059113",
   "reziser" : [ {
-    "id" : null,
+    "id" : 49,
     "krstneMeno" : "David",
     "stredneMeno" : null,
-    "priezvisko" : "Lean"
+    "priezvisko" : "Leans"
   } ],
   "postava" : [ {
     "postava" : "Yuri",
     "dolezitost" : "hlavná postava",
     "herec" : {
-      "id" : null,
+      "id" : 2731,
       "krstneMeno" : "Omar",
       "stredneMeno" : null,
       "priezvisko" : "Sharif"
@@ -23,7 +33,7 @@
     "postava" : "Alexander",
     "dolezitost" : "vedľajšia postava",
     "herec" : {
-      "id" : null,
+      "id" : 2546,
       "krstneMeno" : "Ralph",
       "stredneMeno" : null,
       "priezvisko" : "Richardson"
@@ -32,7 +42,7 @@
     "postava" : "Amelia",
     "dolezitost" : "vedľajšia postava",
     "herec" : {
-      "id" : null,
+      "id" : 711,
       "krstneMeno" : "Adrienne",
       "stredneMeno" : null,
       "priezvisko" : "Corri"
@@ -41,7 +51,7 @@
     "postava" : "Anna",
     "dolezitost" : "vedľajšia postava",
     "herec" : {
-      "id" : null,
+      "id" : 2066,
       "krstneMeno" : "Siobhan",
       "stredneMeno" : null,
       "priezvisko" : "McKenna"
@@ -50,7 +60,7 @@
     "postava" : "Beef-Faced Colonel",
     "dolezitost" : "vedľajšia postava",
     "herec" : {
-      "id" : null,
+      "id" : 2022,
       "krstneMeno" : "Roger",
       "stredneMeno" : null,
       "priezvisko" : "Maxwell"
@@ -59,7 +69,7 @@
     "postava" : "Delegate",
     "dolezitost" : "vedľajšia postava",
     "herec" : {
-      "id" : null,
+      "id" : 1116,
       "krstneMeno" : "Wolf",
       "stredneMeno" : null,
       "priezvisko" : "Frees"
@@ -68,7 +78,7 @@
     "postava" : "Engineer at Dam",
     "dolezitost" : "vedľajšia postava",
     "herec" : {
-      "id" : null,
+      "id" : 962,
       "krstneMeno" : "Mark",
       "stredneMeno" : null,
       "priezvisko" : "Eden"
@@ -77,7 +87,7 @@
     "postava" : "Female Janitor",
     "dolezitost" : "vedľajšia postava",
     "herec" : {
-      "id" : null,
+      "id" : 2229,
       "krstneMeno" : "Gwen",
       "stredneMeno" : null,
       "priezvisko" : "Nelson"
@@ -86,7 +96,7 @@
     "postava" : "Katya",
     "dolezitost" : "vedľajšia postava",
     "herec" : {
-      "id" : null,
+      "id" : 3165,
       "krstneMeno" : "Lucy",
       "stredneMeno" : null,
       "priezvisko" : "Westmore"
@@ -95,7 +105,7 @@
     "postava" : "Komarovsky",
     "dolezitost" : "vedľajšia postava",
     "herec" : {
-      "id" : null,
+      "id" : 2844,
       "krstneMeno" : "Rod",
       "stredneMeno" : null,
       "priezvisko" : "Steiger"
@@ -104,7 +114,7 @@
     "postava" : "Kostoyed",
     "dolezitost" : "vedľajšia postava",
     "herec" : {
-      "id" : null,
+      "id" : 1687,
       "krstneMeno" : "Klaus",
       "stredneMeno" : null,
       "priezvisko" : "Kinski"
@@ -113,7 +123,7 @@
     "postava" : "Lara",
     "dolezitost" : "vedľajšia postava",
     "herec" : {
-      "id" : null,
+      "id" : 615,
       "krstneMeno" : "Julie",
       "stredneMeno" : null,
       "priezvisko" : "Christie"
@@ -122,7 +132,7 @@
     "postava" : "Liberius",
     "dolezitost" : "vedľajšia postava",
     "herec" : {
-      "id" : null,
+      "id" : 2963,
       "krstneMeno" : "Gérard",
       "stredneMeno" : null,
       "priezvisko" : "Tichy"
@@ -131,7 +141,7 @@
     "postava" : "Medical Professor",
     "dolezitost" : "vedľajšia postava",
     "herec" : {
-      "id" : null,
+      "id" : 1644,
       "krstneMeno" : "Geoffrey",
       "stredneMeno" : null,
       "priezvisko" : "Keen"
@@ -140,7 +150,7 @@
     "postava" : "Old Soldier",
     "dolezitost" : "vedľajšia postava",
     "herec" : {
-      "id" : null,
+      "id" : 614,
       "krstneMeno" : "Erik",
       "stredneMeno" : null,
       "priezvisko" : "Chitty"
@@ -149,7 +159,7 @@
     "postava" : "Pasha",
     "dolezitost" : "vedľajšia postava",
     "herec" : {
-      "id" : null,
+      "id" : 723,
       "krstneMeno" : "Tom",
       "stredneMeno" : null,
       "priezvisko" : "Courtenay"
@@ -158,7 +168,7 @@
     "postava" : "Petya",
     "dolezitost" : "vedľajšia postava",
     "herec" : {
-      "id" : null,
+      "id" : 1910,
       "krstneMeno" : "Jack",
       "stredneMeno" : null,
       "priezvisko" : "MacGowran"
@@ -167,7 +177,7 @@
     "postava" : "Political Officer",
     "dolezitost" : "vedľajšia postava",
     "herec" : {
-      "id" : null,
+      "id" : 1927,
       "krstneMeno" : "Peter",
       "stredneMeno" : null,
       "priezvisko" : "Madden"
@@ -176,7 +186,7 @@
     "postava" : "Razin",
     "dolezitost" : "vedľajšia postava",
     "herec" : {
-      "id" : null,
+      "id" : 3215,
       "krstneMeno" : "Noel",
       "stredneMeno" : null,
       "priezvisko" : "Willman"
@@ -185,7 +195,7 @@
     "postava" : "Sasha",
     "dolezitost" : "vedľajšia postava",
     "herec" : {
-      "id" : null,
+      "id" : 2577,
       "krstneMeno" : "Jeffrey",
       "stredneMeno" : null,
       "priezvisko" : "Rockland"
@@ -194,7 +204,7 @@
     "postava" : "The Bolshevik",
     "dolezitost" : "vedľajšia postava",
     "herec" : {
-      "id" : null,
+      "id" : 1629,
       "krstneMeno" : "Bernard",
       "stredneMeno" : null,
       "priezvisko" : "Kay"
@@ -203,7 +213,7 @@
     "postava" : "The Girl",
     "dolezitost" : "vedľajšia postava",
     "herec" : {
-      "id" : null,
+      "id" : 3012,
       "krstneMeno" : "Rita",
       "stredneMeno" : null,
       "priezvisko" : "Tushingham"
@@ -212,7 +222,7 @@
     "postava" : "The Train Jumper",
     "dolezitost" : "vedľajšia postava",
     "herec" : {
-      "id" : null,
+      "id" : 2198,
       "krstneMeno" : "Lili",
       "stredneMeno" : null,
       "priezvisko" : "Muráti"
@@ -221,7 +231,7 @@
     "postava" : "Tonya",
     "dolezitost" : "vedľajšia postava",
     "herec" : {
-      "id" : null,
+      "id" : 598,
       "krstneMeno" : "Geraldine",
       "stredneMeno" : null,
       "priezvisko" : "Chaplin"
@@ -230,7 +240,7 @@
     "postava" : "Yevgraf",
     "dolezitost" : "vedľajšia postava",
     "herec" : {
-      "id" : null,
+      "id" : 1292,
       "krstneMeno" : "Alec",
       "stredneMeno" : null,
       "priezvisko" : "Guinness"
@@ -239,7 +249,7 @@
     "postava" : "Yuri at 8 Years Old",
     "dolezitost" : "vedľajšia postava",
     "herec" : {
-      "id" : null,
+      "id" : 2732,
       "krstneMeno" : "Tarek",
       "stredneMeno" : null,
       "priezvisko" : "Sharif"

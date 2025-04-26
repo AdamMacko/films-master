@@ -72,6 +72,7 @@ export class FilmsEditComponent implements OnInit {
         const reziserArray = this.reziser;
         film.reziser.forEach(person => {
           reziserArray.push(this.fb.group({
+            id: [person.id],
             krstneMeno: [person.krstneMeno],
             stredneMeno: [person.stredneMeno],
             priezvisko: [person.priezvisko]
@@ -84,6 +85,7 @@ export class FilmsEditComponent implements OnInit {
             postava: [postava.postava],
             dolezitost: [postava.dolezitost],
             herec: this.fb.group({
+              id: [postava.herec.id],
               krstneMeno: [postava.herec.krstneMeno],
               stredneMeno: [postava.herec.stredneMeno],
               priezvisko: [postava.herec.priezvisko]
@@ -96,20 +98,29 @@ export class FilmsEditComponent implements OnInit {
 
   save(): void {
     const formValue = this.filmModel.value;
-
+  
     const reziserList: Person[] = formValue.reziser.map((r: any) =>
-      new Person(r.id, r.krstneMeno, r.stredneMeno, r.priezvisko)
+      new Person(
+        r.id !== null ? r.id : undefined,
+        r.krstneMeno,
+        r.stredneMeno,
+        r.priezvisko
+      )
     );
-    
+  
     const postavaList: Postava[] = formValue.postava.map((p: any) =>
       new Postava(
         p.postava,
         p.dolezitost,
-        new Person(p.herec.id, p.herec.krstneMeno, p.herec.stredneMeno, p.herec.priezvisko)
+        new Person(
+          p.herec.id !== null ? p.herec.id : undefined,
+          p.herec.krstneMeno,
+          p.herec.stredneMeno,
+          p.herec.priezvisko
+        )
       )
     );
-    
-
+  
     const film: Film = new Film(
       formValue.nazov,
       formValue.rok,
@@ -123,11 +134,12 @@ export class FilmsEditComponent implements OnInit {
       },
       this.filmId ?? undefined
     );
-
+  
     this.filmService.add(film).subscribe(() => {
       this.router.navigate(['/films']);
     });
   }
+  
 
   delete(): void {
     if (this.filmId) {
@@ -165,7 +177,7 @@ export class FilmsEditComponent implements OnInit {
 
   addReziser(): void {
     this.reziser.push(this.fb.group({
-      id: [null],
+      id: [undefined],
       krstneMeno: [''],
       stredneMeno: [''],
       priezvisko: ['']
@@ -182,7 +194,7 @@ export class FilmsEditComponent implements OnInit {
       postava: [''],
       dolezitost: ['hlavná postava'],
       herec: this.fb.group({
-        id: [null],
+        id: [undefined],
         krstneMeno: [''],
         stredneMeno: [''],
         priezvisko: ['']
