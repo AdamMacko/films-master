@@ -64,9 +64,79 @@
         <mat-label>AFI 2007</mat-label>
         <input matInput type="number" formControlName="afi2007" />
       </mat-form-field>
+
+      <div formArrayName="reziser" style="margin-top: 2rem;">
+        <h2>Režiséri</h2>
+        @for (reziserGroup of reziser.controls; track i; let i = $index) {
+          <div [formGroupName]="i" style="border: 1px solid #ccc; padding: 1rem; margin-bottom: 1rem; border-radius: 8px;">
+            <mat-form-field appearance="fill">
+              <mat-label>Krstné meno</mat-label>
+              <input matInput formControlName="krstneMeno">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+              <mat-label>Stredné meno</mat-label>
+              <input matInput formControlName="stredneMeno">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+              <mat-label>Priezvisko</mat-label>
+              <input matInput formControlName="priezvisko">
+            </mat-form-field>
+
+            <button mat-raised-button color="warn" type="button" (click)="removeReziser(i)">Odstrániť režiséra</button>
+          </div>
+        }
+        <button mat-raised-button color="primary" type="button" (click)="addReziser()">Pridať režiséra</button>
+      </div>
+
+      <div formArrayName="postava" style="margin-top: 2rem;">
+        <h2>Postavy</h2>
+        @for (postavaGroup of postava.controls; track i; let i = $index) {
+          <div [formGroupName]="i" style="border: 1px solid #ccc; padding: 1rem; margin-bottom: 1rem; border-radius: 8px;">
+
+            <mat-form-field appearance="fill">
+              <mat-label>Meno postavy</mat-label>
+              <input matInput formControlName="postava">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+              <mat-label>Dôležitosť</mat-label>
+              <mat-select formControlName="dolezitost">
+                <mat-option value="hlavná postava">Hlavná postava</mat-option>
+                <mat-option value="vedľajšia postava">Vedľajšia postava</mat-option>
+              </mat-select>
+            </mat-form-field>
+
+            <div formGroupName="herec">
+              <h3>Herec</h3>
+
+              <mat-form-field appearance="fill">
+                <mat-label>Krstné meno</mat-label>
+                <input matInput formControlName="krstneMeno">
+              </mat-form-field>
+
+              <mat-form-field appearance="fill">
+                <mat-label>Stredné meno</mat-label>
+                <input matInput formControlName="stredneMeno">
+              </mat-form-field>
+
+              <mat-form-field appearance="fill">
+                <mat-label>Priezvisko</mat-label>
+                <input matInput formControlName="priezvisko">
+              </mat-form-field>
+            </div>
+
+            <button mat-raised-button color="warn" type="button" (click)="removePostava(i)">Odstrániť postavu</button>
+          </div>
+        }
+        <button mat-raised-button color="primary" type="button" (click)="addPostava()">Pridať postavu</button>
+      </div>
+
     </mat-card-content>
 
     <mat-card-actions>
+      
       <button type="submit" mat-raised-button color="primary" [disabled]="filmModel.invalid">
         Save
       </button>
@@ -78,7 +148,7 @@
       <button type="button" mat-button (click)="cancel()">
         Cancel
       </button>
-      
+
     </mat-card-actions>
   </mat-card>
 </form>

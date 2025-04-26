@@ -54,30 +54,13 @@ export class FilmsService {
       catchError(error => this.usersService.processError(error))
     );
   }
-  
-  update(id: number, film: Film): Observable<any> {
-    const headers = {
-      'Content-Type': 'application/json',
-      'X-Auth-Token': this.token
-    };
-  
-    return this.http.put(`${this.url}films/${id}`, film, { headers }).pipe(
-      catchError(error => this.usersService.processError(error))
-    );
-  }
-  
+
   
   delete(id: number): Observable<any> {
     return this.http.delete(`${this.url}films/${id}`, this.getTokenHeader()).pipe(
       catchError(error => this.usersService.processError(error))
     );
   }
-  
-  
-  
-  
-  
-  
   
 }
 

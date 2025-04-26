@@ -95,17 +95,10 @@ export default class FilmsComponent implements AfterViewInit {
     const confirmed = window.confirm(`Naozaj chceš vymazať tento film?`);
     if (confirmed) {
       this.filmsService.delete(id).subscribe(() => {
-        this.filmsResource.reload(); // refresh tabuľky
+        this.filmsResource.reload();
       });
     }
   }
-  
-  
-  
-    
-  
-  
-  
   
 }
 
